@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.debritto.edusco">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_edusco_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_edusco_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Siswa.CariNISActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Guru.CariNIGActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Ortu.CariNISOrtuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Siswa.MainSiswaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Guru.MainGuruActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ortu.MainOrtuActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Siswa.LoginSiswaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Guru.LoginGuruActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ortu.LoginOrtuActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Splashscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
