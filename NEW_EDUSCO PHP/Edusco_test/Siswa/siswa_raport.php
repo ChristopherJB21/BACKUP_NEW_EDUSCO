@@ -15,7 +15,7 @@
 	
 	$rowkelas = mysqli_fetch_array($rkelas);
 	
-    $kelas = $row['kode_kelas'];
+    $kelas = $rowkelas['kode_kelas'];
 	
 	$result = array();
 	

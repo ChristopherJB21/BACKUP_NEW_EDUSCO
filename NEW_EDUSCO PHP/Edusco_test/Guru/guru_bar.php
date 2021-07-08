@@ -32,11 +32,11 @@
             $NHsmt1 = $rowsmt1['Nilai'];
             $NHsmt2 = $rowsmt2['Nilai'];
             
-            $sqlUTSsmt1 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 1 AND kode_mapel = $mapel and kode_nilai = 98;";
-            $sqlUASsmt1 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 1 AND kode_mapel = $mapel and kode_nilai = 99;";  
+            $sqlUTSsmt1 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 1 AND kode_mapel = $kode_mapel and kode_nilai = 98;";
+            $sqlUASsmt1 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 1 AND kode_mapel = $kode_mapel and kode_nilai = 99;";  
             
-            $sqlUTSsmt2 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 2 AND kode_mapel = $mapel and kode_nilai = 98;";
-            $sqlUASsmt2 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 2 AND kode_mapel = $mapel and kode_nilai = 99;";
+            $sqlUTSsmt2 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 2 AND kode_mapel = $kode_mapel and kode_nilai = 98;";
+            $sqlUASsmt2 = "SELECT AVG(nilai) AS Nilai FROM daftar_nilai WHERE NIS = $nis AND Semester = 2 AND kode_mapel = $kode_mapel and kode_nilai = 99;";
             
             $rUTSsmt1 = mysqli_query($id_mysql,$sqlUTSsmt1);
             $rUASsmt1 = mysqli_query($id_mysql,$sqlUASsmt1);
